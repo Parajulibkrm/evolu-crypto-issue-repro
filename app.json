@@ -31,14 +31,24 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.parajulibkrm.personal-finance-evolu"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.parajulibkrm.personal_finance_evolu"
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "5133564e-759d-46f8-b101-fbcd781183b4"
       }
     }
   }

@@ -15,6 +15,9 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@evolu/common": "6.0.1-preview.17",
+    "@evolu/react": "9.0.1-preview.3",
+    "@evolu/react-native": "12.0.1-preview.3",
     "@expo/react-native-action-sheet": "^4.1.1",
     "@expo/vector-icons": "^14.0.0",
     "@gorhom/bottom-sheet": "^4.6.4",
@@ -37,6 +40,7 @@
     "expo-linking": "~7.1.4",
     "expo-navigation-bar": "~4.2.7",
     "expo-router": "~5.1.4",
+    "expo-sqlite": "^15.2.14",
     "expo-status-bar": "~2.2.3",
     "expo-store-review": "~8.1.5",
     "expo-system-ui": "~5.0.6",
@@ -47,6 +51,7 @@
     "react-native": "0.79.5",
     "react-native-gesture-handler": "~2.24.0",
     "react-native-pager-view": "6.7.1",
+    "react-native-quick-crypto": "^0.7.17",
     "react-native-reanimated": "~3.17.4",
     "react-native-safe-area-context": "5.4.0",
     "react-native-screens": "~4.11.1",

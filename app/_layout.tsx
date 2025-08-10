@@ -1,5 +1,10 @@
 import '../global.css';
 import 'expo-dev-client';
+
+import { install } from 'react-native-quick-crypto';
+
+install();
+
 import { ThemeProvider as NavThemeProvider } from '@react-navigation/native';
 
 import { ActionSheetProvider } from '@expo/react-native-action-sheet';
@@ -12,6 +17,8 @@ import { StatusBar } from 'expo-status-bar';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 import { ThemeToggle } from '~/components/ThemeToggle';
+import { EvoluProvider } from '@evolu/react';
+import { evolu } from '~/lib/evolu';
 import { useColorScheme, useInitialAndroidBarSync } from '~/lib/useColorScheme';
 import { NAV_THEME } from '~/theme';
 
@@ -37,10 +44,12 @@ export default function RootLayout() {
         <BottomSheetModalProvider>
           <ActionSheetProvider>
             <NavThemeProvider value={NAV_THEME[colorScheme]}>
-              <Stack screenOptions={SCREEN_OPTIONS}>
-                <Stack.Screen name="(drawer)" options={DRAWER_OPTIONS} />
-                <Stack.Screen name="modal" options={MODAL_OPTIONS} />
-              </Stack>
+              <EvoluProvider value={evolu}>
+                <Stack screenOptions={SCREEN_OPTIONS}>
+                  <Stack.Screen name="(drawer)" options={DRAWER_OPTIONS} />
+                  <Stack.Screen name="modal" options={MODAL_OPTIONS} />
+                </Stack>
+              </EvoluProvider>
             </NavThemeProvider>
           </ActionSheetProvider>
         </BottomSheetModalProvider>
