@@ -1,3 +1,6 @@
+import { install } from 'react-native-quick-crypto';
+
+install();
 import { Tabs } from 'expo-router';
 
 import { TabBarIcon } from '~/components/TabBarIcon';

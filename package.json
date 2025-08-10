@@ -15,6 +15,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@babel/plugin-transform-dynamic-import": "^7.27.1",
     "@evolu/common": "6.0.1-preview.17",
     "@evolu/react": "9.0.1-preview.3",
     "@evolu/react-native": "12.0.1-preview.3",
@@ -31,6 +32,7 @@
     "@rn-primitives/avatar": "^1.2.0",
     "@rn-primitives/slot": "^1.2.0",
     "@roninoss/icons": "^0.0.4",
+    "babel-plugin-module-resolver": "^5.0.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "expo": "~53.0.20",
@@ -58,7 +60,6 @@
     "react-native-uitextview": "2.0.0-rc.10",
     "react-native-web": "^0.20.0",
     "tailwind-merge": "^2.2.1",
-    "babel-plugin-module-resolver": "^5.0.2",
     "zustand": "^4.5.1"
   },
   "devDependencies": {
